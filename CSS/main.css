@@ -1,0 +1,86 @@
+*{
+    margin: 0; padding: 0; font-family: Tahoma;
+}
+
+.grid{
+    display: grid;
+    /*grid-template-rows: 400px 600px;
+    grid-template-columns: auto auto auto;
+    row-gap: 20px; column-gap: 40px;*/
+    grid: 400px 600px/auto auto auto;
+    gap: 20px 40px;
+}
+
+.one, .Three, .five{
+    background-color: #0202df;
+}
+
+.Two, .four, .six{
+    background-color: #ee05a8;
+}
+
+/*.four{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}*/
+
+.four{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.left{
+    background-color: #ff8c00;
+    padding: 12px 18px;
+    width: 20%;
+    justify-self: start;
+    margin: 10px;
+}
+
+.center{
+    color: #ffffff;
+    background-color: #0d033b;
+    padding: 12px 18px;
+    width: 20%;
+    justify-self: center;
+    margin: 10px;
+}
+
+.right{
+    color: #ffffff;
+    background-color: #0400ff;
+    padding: 12px 16px;
+    width: 20%;
+    justify-self: end;
+    margin: 10px;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+}
+
+.navbar{
+    background-color: #808080;
+    width: 100vw;
+    display: flex;
+    padding: 11px;
+    color: #ffffff;
+}
+
+.leftmenu{
+    width: 30%;
+    justify-self: start;
+}
+
+.centermenu{
+    width: 30%;
+    justify-self: center;
+}
+
+.rightmenu{
+    width: 30%;
+    justify-self: end;
+}
